@@ -33,6 +33,7 @@ main {
   background-color: black;
 }
 
+.cart-list,
 .goods-list {
   display: flex;
   flex-flow: row;
