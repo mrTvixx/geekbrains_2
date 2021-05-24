@@ -1,1 +1,42 @@
 https://htmlacademy.ru/blog/boost/tools/installing-nodejs
+
+и список моих плагинов в vs code
+тут всякое разное для react vue 
+есть просто темы оформления
+что-то для докера, какие расширения для удобства в вс коде
+
+aaron-bond.better-comments
+alefragnani.Bookmarks
+alefragnani.project-manager
+alexkrechik.cucumberautocomplete
+bierner.color-info
+christian-kohler.npm-intellisense
+christian-kohler.path-intellisense
+chrmarti.regex
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+dionmunk.vscode-notes
+donjayamanne.githistory
+eamodio.gitlens
+eg2.vscode-npm-script
+esbenp.prettier-vscode
+formulahendry.auto-close-tag
+formulahendry.auto-complete-tag
+formulahendry.auto-rename-tag
+Gruntfuggly.todo-tree
+jithurjacob.nbpreviewer
+mikestead.dotenv
+monokai.theme-monokai-pro-vscode
+ms-azuretools.vscode-docker
+naumovs.color-highlight
+octref.vetur
+rokoroku.vscode-theme-darcula
+shyykoserhiy.vscode-spotify
+techer.open-in-browser
+VisualStudioExptTeam.vscodeintellicode
+vitaliymaz.vscode-svg-previewer
+vscode-icons-team.vscode-icons
+wayou.vscode-todo-highlight
+will-stone.plastic
+wix.vscode-import-cost
+xabikos.JavaScriptSnippets
