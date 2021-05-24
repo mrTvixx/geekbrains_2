@@ -120,7 +120,7 @@ class Basket {
     this.render();
   }
 
-  setAddListeners(list = [{ id_product: 123 }, { id_product: 456 }]) {
+  setAddListeners(list = []) {
     list.forEach((item) => {
       document.getElementById(`add-btn-${item.id_product}`).addEventListener('click', (e) => this.addItem(e));
     })
