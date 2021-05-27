@@ -1,20 +1,30 @@
 <template>
   <div class="hello">
-    <hr />
-    ksjadnfkjasnfkjasn
-    <h3>{{ fakeDataForTemplates.toUpperCase() }}</h3>
-    <h3>{{ fakeDataForTemplates }}</h3>
-    <h3>{{ fakeDataForTemplates }}</h3>
-    <h3>{{ fakeDataForTemplates }}</h3>
-    <h3>{{ fakeDataForTemplates }}</h3>
-    <hr />
+    Заголовок: {{ title }}
+    <input v-model="inputValue" />
+    <button @click="updateParentTitle">update</button>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String,
+      default: "Default title",
+    },
+    setTitle: {
+      type: Function,
+    },
+  },
   data: () => ({
+    inputValue: "",
     fakeDataForTemplates: "hello world in water",
   }),
+  methods: {
+    updateParentTitle() {
+      this.setTitle(this.inputValue);
+    },
+  },
 };
 </script>

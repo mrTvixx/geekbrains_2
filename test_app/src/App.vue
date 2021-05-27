@@ -1,15 +1,32 @@
 <template>
-  <div id="app">
-    <h3>text in app js</h3>
-    <HelloWorld />
-    <DataComponent />
-    <Condition />
-    <List />
-    <Methods />
+  <div>
+    <h1>{{ mainTitle }}</h1>
+    <Wrapper>
+      <HelloWorld :setTitle="setMainTitle" />
+      <HelloWorld title="Трумтурум" />
+    </Wrapper>
+    <Wrapper>
+      <h3>text in app js</h3>
+      <template v-slot:footer> content </template>
+      kdsalfkadlfk asdfghjkl;
+    </Wrapper>
+    <Wrapper>
+      <DataComponent />
+    </Wrapper>
+    <Wrapper>
+      <Condition />
+    </Wrapper>
+    <Wrapper>
+      <List />
+    </Wrapper>
+    <Wrapper>
+      <Methods />
+    </Wrapper>
   </div>
 </template>
 
 <script>
+import Wrapper from "./components/Wrapper";
 import HelloWorld from "./components/HelloWorld";
 import DataComponent from "./components/DataComponent";
 import Condition from "./components/Condition";
@@ -18,11 +35,21 @@ import Methods from "./components/Methods";
 
 export default {
   components: {
+    Wrapper,
     HelloWorld,
     DataComponent,
     Condition,
     List,
     Methods,
+  },
+  data: () => ({
+    mainTitle: "",
+    title: "Заголовок для Hello World",
+  }),
+  methods: {
+    setMainTitle(value) {
+      this.mainTitle = value;
+    },
   },
 };
 </script>

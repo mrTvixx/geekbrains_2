@@ -2,7 +2,6 @@
   <div>
     <input v-model="shvabraCadabra" />
     {{ shvabraCadabra.toUpperCase() }}
-    <hr />
   </div>
 </template>
 

@@ -4,7 +4,6 @@
       <b>Товар: </b> {{ grbah.name }}
       <div>aaaaa</div>
     </div>
-    <hr />
   </div>
 </template>
 

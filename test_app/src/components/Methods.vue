@@ -10,7 +10,6 @@
     <br />
     <button @click.once="sendDataToServer">Send</button>
     <br />
-    <hr />
   </div>
 </template>
 
