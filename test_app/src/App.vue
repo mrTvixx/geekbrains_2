@@ -51,6 +51,11 @@ export default {
       this.mainTitle = value;
     },
   },
+  mounted() {
+    fetch('http://localhost:3000/getgroupcount')
+      .then((data) => data.json())
+      .then((data) => console.log(data))
+  }
 };
 </script>
 
