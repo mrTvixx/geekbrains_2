@@ -12,6 +12,8 @@
 </template>
 
 <script>
+const API_URL = 'http://localhost:3000'
+
 export default {
   props: {
     isVisibleCart: {
@@ -21,6 +23,20 @@ export default {
     cartGoods: {
       type: Array,
       default: () => ([]),
+    },
+    makePOSTRequest: {
+      type: Function,
+      default: () => null
+    },
+    getCart: {
+      type: Function,
+      default: () => null
+    }
+  },
+  methods: {
+    onClick(item) {
+      this.makePOSTRequest(`${API_URL}/deleteFromCart`, item)
+        .then(() => this.getCart())
     }
   }
 }

@@ -4,7 +4,7 @@
     <main>
       <GoodsList @add-to-cart="addToCart" :goods="filteredGoods" />
       <br />
-      <Cart :cartGoods="cartGoods" :isVisibleCart="isVisibleCart" />
+      <Cart :makePOSTRequest="makePOSTRequest" :getCart="getCart"  :cartGoods="cartGoods" :isVisibleCart="isVisibleCart" />
     </main>
   </div>
 </template>
